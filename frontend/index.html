@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo Application</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+<h1>Todo Application</h1>
+
+<div class="container">
+
+    <!-- LEFT SIDE -->
+    <div class="form-section">
+        <h2>Add New Task</h2>
+
+        <label>Task Name</label>
+        <input type="text" id="todoName" placeholder="Enter task name">
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="todoCompleted">
+            <label for="todoCompleted">Completed</label>
+        </div>
+
+        <button onclick="addTodo()">Add Task</button>
+    </div>
+
+
+    <!-- RIGHT SIDE -->
+    <div class="list-section">
+        <h2>Task List</h2>
+        <ul id="todoList"></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
