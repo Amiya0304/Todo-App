@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>todo-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ToDo-Api</name>
 	<description>Demo project for Springboot and Docker</description>
