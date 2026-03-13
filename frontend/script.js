@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/api/todo";
+const API_URL = `http://backend-service:8080/api/todo`;
 
 async function loadTodos() {
 

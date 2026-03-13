@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: todo-backend
+  namespace: todo-app
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: todo-backend
+
+  template:
+    metadata:
+      labels:
+        app: todo-backend
+
+    spec:
+      containers:
+        - name: backend
+          image: amiya0304/todo-backend:latest
+          imagePullPolicy: Always
+
+          ports:
+            - containerPort: 8080
